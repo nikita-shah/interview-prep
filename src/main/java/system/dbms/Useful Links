@@ -1,0 +1,29 @@
+scaler basic of dbms
+    -> https://www.scaler.com/topics/dbms/
+
+Keys, functional dependencies, closures
+    -> https://www.upgrad.com/blog/types-of-keys-in-dbms/#:~:text=A%20key%20in%20DBMS%20is,key%20are%20called%20key%20values.
+
+
+Restaurant database dump used in the class
+    -> https://gist.github.com/sahilbansal11/3500797cc268f3727c649f107d9c186f
+
+Imdb movies dump and queries used in the class
+    -> https://docs.google.com/document/d/1VbZzwS0N-TcFPRqTBqRTiXjTwTGEDdi3sItYktwONMY/edit
+
+SQL queris scaler joins
+    -> https://docs.google.com/document/d/1lnZzVZDKhHaXWtrKL0bZbLS5obIMOWRnHUxYu9K0hjM/edit
+
+co related sub queries
+    -> https://en.wikipedia.org/wiki/Correlated_subquery
+
+joins vs nested queries, vs co related sub queries
+    -> https://www.geeksforgeeks.org/difference-between-nested-subquery-correlated-subquery-and-join-operation/
+
+
+
+
+
+* Database isolation levels are interesting and could be read later
+* Read SQl query execution etc from Navathe :)
+* write sample sql's for interview

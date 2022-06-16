@@ -1,0 +1,20 @@
+Java
+
+design patterns
+Singleton
+java threads
+Garbage collection
+Autoboxing and unboxing
+Reflection
+Deep and shallow copy
+Runnable and callable
+synchronize
+
+
+
+
+Internal workings of java hash map.
+Why is String immutable in java?
+What happes when new string is created vs concatenated?
+What is the difference between string buffer and stringbuilder?
+Programmatically implement deadlock

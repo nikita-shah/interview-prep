@@ -1,0 +1,4 @@
+proxy =  when the server does not know who the client is
+reverse proxy = when the client does not know which server has returened the information.
+
+    -> https://www.youtube.com/watch?v=SqqrOspasag

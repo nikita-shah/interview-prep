@@ -1,0 +1,30 @@
+01 knapsack with smaller weight values
+- our dp table is item index vs weight
+- the dp table dp[i][j] stores the max value possible with elements till ith index for weight of j
+- result is in the last row last column
+- was able to solve this recursively
+
+
+
+01 knapsack with larger weight values
+- our dp table is item index vs values
+- the dp table dp[i][j] stores the min weight required  with elements till ith index for value of j
+- result is in the last row where the dp[lastRow][col] <= givenCapacity in problem
+- was not able to solve this recusrsively, entire table was not getting filled.
+- was able to solve this iteratively
+
+
+Rahul Yadav's answer
+
+For understanding the not filling up of whole DP table, you need to first understand a few things:
+
+1. Every cell in the dp table is storing the answer of a state.
+2. We generally care about the answer of only one state, for eg (n - 1, W).
+So, when you call the recursive function to solve the answer of this state,
+it calls to calculate the answer of some other states(which are necessary for the computation of answer of this state),
+and this recursively keeps on happening.
+3. It's not necessary that to calculate the answer of the state (n - 1, W),
+you need to have the answer of all states of your DP table.
+
+So, that's the reason why when one recursively calls to calculate the answer of the state (n - 1, W),
+the whole of DP table is not filled up.

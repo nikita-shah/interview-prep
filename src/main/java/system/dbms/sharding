@@ -1,0 +1,12 @@
+sharding vs partitioning
+-> https://hazelcast.com/glossary/sharding/#:~:text=Sharding%20and%20partitioning%20are%20both,within%20a%20single%20database%20instance.
+
+paritioning referes to breakup within same physical machine generally and sharding is always talked about for different physical machine.
+sharding is talked about in cases of vertical and horizontal scaling.
+(This is because sharding and partitioning are both related to breaking up a large data set into smaller subsets.
+The difference is that sharding implies the data is spread across multiple computers while partitioning does not.
+)
+
+->https://www.singlestore.com/blog/database-sharding-vs-partitioning-whats-the-difference/
+
+

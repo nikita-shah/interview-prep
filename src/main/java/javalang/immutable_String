@@ -1,0 +1,19 @@
+how to make custom class immutable
+    -> https://www.educative.io/edpresso/how-to-build-an-immutable-class-in-java
+
+general immutable objects in java -> https://www.baeldung.com/java-immutable-object
+
+When concatenationg in a loop .append preffered over +.
+in a single statement, compiler coverts + to append.
+
+String can be changed by way of reflection
+    ->https://stackoverflow.com/questions/20945049/is-a-java-string-really-immutable
+
+why is a string mutable?
+    ->https://www.baeldung.com/java-string-immutable
+    --> string pool, using same physical string for different references, saves memory.
+    --> security, strings could be storing sensitive info like user name etc, these should not accidently be modified during the course of execution
+    --> we get advantage of thread safety because they are ikmmutable, as when we try to change, a new string object is created and returned, original ooone remains inrtact
+
+string pool
+    --> https://www.baeldung.com/java-string-pool

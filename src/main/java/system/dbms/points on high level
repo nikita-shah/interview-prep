@@ -1,0 +1,5 @@
+- need of database
+- rdbms, tables, keys
+- entities, relationships
+- normalization, functional dependencies, normal forms, denormalization
+- joins,transactions, acid properties of transactions.

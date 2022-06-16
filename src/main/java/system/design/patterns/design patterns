@@ -1,0 +1,6 @@
+SINGLETON
+->https://www.baeldung.com/java-singleton-double-checked-locking
+->https://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html
+->https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html#axzz7UwEQJ7fo
+**volatile keywork in block syncronization
+

@@ -1,0 +1,173 @@
+Given a singly linked list of receiver ids of the suspicious transactions list by the risk team. The team wants to identify if these users are involved in transferring among themselves thus forming a cyclic pattern.
+
+Example 1
+
+Input: list = [1, 2, 3, 2, 4]
+Output: True
+
+1->2->3->2->4
+
+Example 2
+
+Input: list = [1, 2, 3, 5, 4]
+Output: False
+
+*/
+class Node
+{
+    int id;
+    Node next;
+    public Node(int id)
+    {
+        this.id = id;
+        this.next = null;
+    }
+}
+
+
+public class Solution {
+
+
+ public static void main(String[] args) {
+
+
+
+     int[] A = new int[] {1,2,3,2,4};
+
+     Node head = createLinkedList(A);
+     printList(head);
+     if (head == null )
+     {
+        System.out.println("Suspicious id list empty! We are safe.");
+     }
+     else
+     {
+        if(isCyclePresent(head))
+        {
+            System.out.println("We have a cyclic pattern!");
+        }
+        else
+        {
+            System.out.println("No cyclic pattern!");
+        }
+     }
+
+     //edge cases
+
+     //1. A is empty
+     //2. only 1 id
+
+
+   }
+
+   private static Node  createLinkedList(int[] suspiciousIds)
+   {
+
+       if(suspiciousIds.length == 0 ) return null;
+       Node head = new Node(suspiciousIds[0]);
+       Node prev = head;
+       for(int i =1 ; i< suspiciousIds.length ;i++)
+       {
+           Node newNode = new Node(suspiciousIds[i]);
+           prev.next = newNode;
+           prev = prev.next;
+       }
+       return head;
+   }
+
+   private static void printList(Node head)
+   {
+       Node curr = head;
+       while(curr != null)
+       {
+           System.out.println(curr.id + "->");
+           curr = curr.next;
+       }
+   }
+
+   private static boolean isCyclePresent(Node head)
+   {
+       Node slow = head, fast = head;
+
+       while(fast!=null && fast.next!=null)
+       {
+           slow = slow.next;
+           fast = fast.next .next;
+
+           if(slow.id == fast.id)
+                return true;
+       }
+
+       //slow and fast are same
+
+       return false;
+   }
+
+}
+
+
+
+/*
+
+Employee Entity - Write REST API - CRUD
+https://xxxx.xxxx/employee?id={aaa}
+
+create ->  POST request https://xxxx.xxxx/employee/create  accepts a JSON {user name: } 201, 400, 500 sends back the id of the employee that got created
+retrieve ->  GET https://xxxx.xxxx/employee?id={aaa}  {response of employee deatila in JSON} 200, 404, 500
+update -> PUT   https://xxxx.xxxx/employee?id={aaa} {respons of employee } 200, 204, 400, 500
+delete -> DELETE   https://xxxx.xxxx/employee?id={aaa}
+
+
+
+*/
+
+
+
+
+//DEADLOCK
+
+
+//N friends who owe each other money
+// A B C D E
+
+// A -> B -> C -> D -> E -> A
+
+
+class Sample extends Thread
+{
+  static int count = 10;
+  int id;
+  @overridde
+  void run ()
+  {
+     if(count > 5)
+     {
+     sleep;
+     }
+     else if(count <= 5)
+      {
+     count --;
+     }
+     else if(count ==0)
+     {
+       //terminate thread
+     }
+
+
+  }
+}
+
+
+class MainClass
+{
+
+public static void main(String[] args)
+{
+ Sample s1 = new Thread(1);
+ Sample s2 = new Thread(2);
+ Sample s3 = new Thread(3);
+ Sample s4 = new Thread(4);
+ Sample s5 = new Thread(5);
+
+}
+}

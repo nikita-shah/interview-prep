@@ -1,0 +1,6 @@
+consistent hashing is a data partioning and replication solution  where in data servers form a circular ring and store data of a particular range.
+consistent hashing mminimizes the keys to be moved in case of node additions or deletions of nodes.
+With virtual tokens in picture, we avoud problems like hotspot/celebrity and achieve a more uniform distribution.
+
+theory explained
+-> https://www.educative.io/courses/grokking-the-system-design-interview/B81vnyp0GpY?aid=5082902844932096&utm_source=google&utm_medium=paid&utm_campaign=interview_prep&utm_content=dynamic&utm_term=&utm_campaign=%5BTest%5D+Dynamic+Verticals&utm_source=adwords&utm_medium=ppc&hsa_acc=5451446008&hsa_cam=14045073269&hsa_grp=133791763082&hsa_ad=584321086489&hsa_src=g&hsa_tgt=dsa-1287243227699&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw7cGUBhA9EiwArBAvorBnaT05dA4P62PmrQ9qlUN54e6wIgjZoTEOF8W4MQAIXwFePepcxxoCNL4QAvD_BwE

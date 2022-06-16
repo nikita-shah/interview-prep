@@ -1,0 +1,3 @@
+By default the priority queue implementation of Java is that of a min heap.
+To have a max heap from priority queue, pass reverse comparator to it in the constructor
+    PriorityQueue<Integer> prq = new PriorityQueue<>(Collections.reverseOrder());
