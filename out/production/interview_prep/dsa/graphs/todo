@@ -1,9 +1,0 @@
-creating a graph
-- i have allways created a graph using adjaceny list as arraylist of arraylist of integer
-and this arraylist of arraylist was first filled with initial empty arraylists one empty array list per node.
-check to see if something better can be done here, is the way i am doing this the most efficient way of doing it?
-- for adjancency list we could also use a map map<node,list of adjacent vertices>
-this way if the graph is sparse we would save up on good amount of space.
-- in prims solution i have constructed a graph using map
-
-
